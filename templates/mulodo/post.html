@@ -23,6 +23,59 @@
     <!-- Custom styles for this template -->
     <link href="/templates/{{config.template}}/css/agency.min.css" rel="stylesheet">
 
+    <style type="text/css">
+      #navbarResponsive ul {list-style: none;}
+      #navbarResponsive:after, #navbarResponsive ul:after {
+          content: '';
+          display: block;
+          clear: both;
+      }
+      
+      #navbarResponsive ul, #navbarResponsive li, #navbarResponsive a {
+          margin: 0;
+          padding: 0;
+          position: relative;
+      }
+      #navbarResponsive .has-sub {z-index: 1;}
+      #navbarResponsive .has-sub ul {
+          display: none;
+          position: absolute;
+          width: 200px;
+          top: 100%;
+          left: 0;
+      }
+      #navbarResponsive .has-sub .has-sub ul {
+          left: 100%;
+          top: 0;
+      }
+      #navbarResponsive .has-sub:hover > ul {display: block;}
+      #navbarResponsive > ul > li:hover:after {
+          content: '';
+          display: block;
+          width: 0;
+          height: 0;
+          position: absolute;
+          left: 50%;
+          bottom: 0;
+          border-left: 10px solid transparent;
+          border-right: 10px solid transparent;
+          border-bottom: 10px solid #0fa1e0;
+          margin-left: -10px;
+      }
+      #navbarResponsive .has-sub ul li a {
+          background: #0fa1e0;
+          border-bottom: 1px dotted #31b7f1;
+          font-size: 11px;
+          filter: none;
+          display: block;
+          line-height: 1.4;
+          padding: 10px;
+          color: #fff;
+      }
+      #navbarResponsive .has-sub ul li:hover a {background: #0c7fb0; }
+      #navbarResponsive .has-sub .has-sub ul li a:hover {background: #0a6d98;}
+    </style>
+
   </head>
 
   <body id="page-top">
@@ -37,26 +90,75 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav text-uppercase ml-auto">
-            <li class="nav-item">
+            <li class="nav-item has-sub">
               <a class="nav-link js-scroll-trigger" href="#part1">Setup PC</a>
+                <ul>
+                 <li class="has-sub"><a href="#"><span>Setup</span></a></li>
+                 <li><a href="#"><span>General Issues</span></a></li>
+                 <li><a href="#"><span>Security</span></a></li>
+                </ul>
             </li>
-            <li class="nav-item">
+            <li class="nav-item has-sub">
               <a class="nav-link js-scroll-trigger" href="#part2">Unix Server</a>
+                <ul>
+                 <li class="has-sub"><a href="#"><span>Introduction to the UNIX Operating System</span></a></li>
+                 <li><a href="#"><span>Tutorial One</span></a></li>
+                 <li><a href="#"><span>Tutorial Two</span></a></li>
+                 <li><a href="#"><span>Tutorial Three</span></a></li>
+                 <li><a href="#"><span>Tutorial Four</span></a></li>
+                 <li><a href="#"><span>Tutorial Five</span></a></li>
+                 <li><a href="#"><span>Tutorial Six</span></a></li>
+                </ul>
             </li>
-            <li class="nav-item">
+            <li class="nav-item has-sub">
               <a class="nav-link js-scroll-trigger" href="#part3">Networks</a>
+                <ul>
+                 <li class="has-sub"><a href="#"><span>XP Network Log-on for Home Users</span></a></li>
+                 <li><a href="#"><span>What is Domain Name Resolution</span></a></li>
+                 <li><a href="#"><span>The Hosts File and what it can do for you</span></a></li>
+                 <li><a href="#"><span>TCP and UDP Ports Explained</span></a></li>
+                 <li><a href="#"><span>IP Addresses Explained</span></a></li>
+                 <li><a href="#"><span>All about Networks</span></a></li>
+                </ul>
             </li>
-            <li class="nav-item">
+            <li class="nav-item has-sub">
               <a class="nav-link js-scroll-trigger" href="#part4">Basic PHP Knowledge</a>
+                <ul>
+                 <li class="has-sub"><a href="#"><span>Basic PHP Knowledge</span></a></li>
+                 <li><a href="#"><span>PHP - Coding Standard</span></a></li>
+                 <li><a href="#"><span>Object Oriented Programming in PHP</span></a></li>
+                 <li><a href="#"><span>Laravel</span></a></li>
+                 <li><a href="#"><span>MySQL</span></a></li>
+                 <li><a href="#"><span>PHP Security</span></a></li>
+                </ul>
             </li>
-            <li class="nav-item">
+            <li class="nav-item has-sub">
               <a class="nav-link js-scroll-trigger" href="#part5">Source Control</a>
+                <ul>
+                 <li class="has-sub"><a href="#"><span>GIT</span></a></li>
+                 <li><a href="#"><span>SVN</span></a></li>
+                 <li><a href="#"><span>Comments</span></a></li>
+                 <li><a href="#"><span>CI</span></a></li>
+                </ul>
             </li>
-            <li class="nav-item">
+            <li class="nav-item has-sub">
               <a class="nav-link js-scroll-trigger" href="#part6">Testing</a>
+                <ul>
+                 <li class="has-sub"><a href="#"><span>Unit testing</span></a></li>
+                 <li><a href="#"><span>Integration testing</span></a></li>
+                 <li><a href="#"><span>Acceptance testing</span></a></li>
+                </ul>
             </li>
-            <li class="nav-item">
+            <li class="nav-item has-sub">
               <a class="nav-link js-scroll-trigger" href="#part7">Project Management</a>
+                <ul>
+                 <li class="has-sub"><a href="#"><span>Agile Project Management</span></a></li>
+                 <li><a href="#"><span>Basic Management Skills</span></a></li>
+                 <li><a href="#"><span>Basic Quality Tools</span></a></li>
+                 <li class="has-sub"><a href="#"><span>Gantt Chart Tool</span></a></li>
+                 <li><a href="#"><span>Project Kick-off Meeting</span></a></li>
+                 <li><a href="#"><span>Work Breakdown Structure</span></a></li>
+                </ul>
             </li>
           </ul>
         </div>
@@ -69,7 +171,7 @@
         <div class="intro-text">
           <div class="intro-lead-in">Welcome To Mulodo Vietnam!</div>
           <div class="intro-heading text-uppercase">It's Nice To Meet You</div>
-          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#part1">Tell Me More</a>
+          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="/">Tell Me More</a>
         </div>
       </div>
     </header>
