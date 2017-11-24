@@ -48,13 +48,13 @@
             <li class="nav-item has-sub">
               <a class="nav-link js-scroll-trigger" href="#part2">Unix Server</a>
                 <ul>
-                 <li class="has-sub"><a href="#"><span>Introduction to the UNIX Operating System</span></a></li>
-                 <li><a href="#"><span>Tutorial One</span></a></li>
-                 <li><a href="#"><span>Tutorial Two</span></a></li>
-                 <li><a href="#"><span>Tutorial Three</span></a></li>
-                 <li><a href="#"><span>Tutorial Four</span></a></li>
-                 <li><a href="#"><span>Tutorial Five</span></a></li>
-                 <li><a href="#"><span>Tutorial Six</span></a></li>
+                 <li class="has-sub"><a href="introduction-to-the-unix-operating-system"><span>Introduction to the UNIX Operating System</span></a></li>
+                 <li><a href="unix-tutorial-one"><span>Tutorial One</span></a></li>
+                 <li><a href="unix-tutorial-two"><span>Tutorial Two</span></a></li>
+                 <li><a href="unix-tutorial-three"><span>Tutorial Three</span></a></li>
+                 <li><a href="unix-tutorial-four"><span>Tutorial Four</span></a></li>
+                 <li><a href="unix-tutorial-five"><span>Tutorial Five</span></a></li>
+                 <li><a href="unix-tutorial-six"><span>Tutorial Six</span></a></li>
                 </ul>
             </li>
             <li class="nav-item has-sub">
@@ -124,11 +124,12 @@
     </header>
 
     <!-- Content -->
-    <section id="part2">
+    <section id="part">
       <div class="container">
         <h1 class="title">{{ post.title }}</h1>
         <div class="time">
             <span class="date">{{ post.date | date('Y-m-d') }}</span>
+            <br/><br/><br/>
         </div>
         {{ post.html|raw }}
 
